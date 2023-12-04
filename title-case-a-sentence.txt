@@ -1,0 +1,7 @@
+function titleCase(str) {
+  const sentence = str.split(" ").map(word => `${word.charAt(0).toUpperCase()}${word.slice(1,).toLowerCase()}`).join(" ")
+  console.log(sentence)
+  return sentence;
+}
+
+titleCase("sHoRt AnD sToUt");

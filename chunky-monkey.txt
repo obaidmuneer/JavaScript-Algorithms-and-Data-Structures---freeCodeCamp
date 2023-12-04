@@ -1,0 +1,19 @@
+function chunkArrayInGroups(arr, size) {
+  // const twoDimArr = [[...arr.slice(0, size)], [...arr.slice(size,)]]
+  const twoDimArr = []
+  let singleDimArr = []
+  arr.map((a, i) => {
+    singleDimArr.push(a)
+    if (singleDimArr.length === size || i === arr.length -1) {
+      twoDimArr.push(singleDimArr)
+      singleDimArr = []
+    }
+    // console.log(i ,arr.length -1)
+  })
+
+  console.log(twoDimArr)
+
+  return twoDimArr;
+}
+
+chunkArrayInGroups([], 5);

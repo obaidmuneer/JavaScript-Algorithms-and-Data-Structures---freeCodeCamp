@@ -1,0 +1,7 @@
+function truncateString(str, num) {
+  // console.log(`${str.substr(0, num)}...`)
+  if (num >= str.length) return str
+  return `${str.substr(0, num)}...`;
+}
+
+truncateString("A-tisket a-tasket A green and yellow basket", "A-tisket a-tasket A green and yellow basket".length);
